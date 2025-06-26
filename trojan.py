@@ -63,3 +63,11 @@ if __name__ == '__main__':
         else:
             print('Conexao deu erro, tentando novamente')
             time.sleep(3)
+
+#### FUTURAS MELHORIAS
+#Criptografar os dados entre cliente/servidor:
+#Usar ssl.wrap_socket() no socket.
+#Ofuscar os comandos:
+#Encodar comandos com base64 e decodificar antes de passar ao subprocess.
+#Detectar sandbox/VM (anti-analysis):
+#Checar por nomes de processos como VBoxService, Wireshark, Procmon, etc.
